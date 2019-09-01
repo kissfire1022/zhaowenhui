@@ -1,14 +1,4 @@
 <?php
-$count =6;
-function get_count(){
-	static $count = 0;
-	$count++;
-	return $count;
-}
-
-echo get_count();
-echo get_count();
-exit();
 error_reporting(0);
 define('PROJECT_PRE', '');
 defined('YII_DEBUG') or define('YII_DEBUG',false); 
