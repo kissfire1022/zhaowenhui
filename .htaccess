@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+
+   RewriteRule project/lists_([1-9]+[0-9]*).html$ index.php?r=project/default/lists&catid=$1
+   RewriteRule project/lists_([1-9]+[0-9]*)_([1-9]+[0-9]*).html$ index.php?r=project/default/lists&catid=$1&id=$2
+   RewriteRule news_([1-9]+[0-9]*).html$ index.php?r=news&catid=$1
+   RewriteRule news/content_([1-9]+[0-9]*).html$ index.php?r=news/default/content&id=$1
+   RewriteRule contact/about.html$ index.php?r=contact/default/about
+   RewriteRule contact.html$ index.php?r=contact
+   RewriteRule manager.html$ index.php?r=manager/default/login&t=1560213999
+   RewriteRule news_([1-9]+[0-9]*)/next_([1-9]+[0-9]*).html$ index.php?r=news&catid=$1&next=$2
+   RewriteRule contact_([1-9]+[0-9]*).html$ index.php?r=contact/default/content&id=$1
+   
+   
+</IfModule>
